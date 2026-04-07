@@ -38,13 +38,13 @@ h2::after {
 
 @keyframes flutuar {
   0% {
-    transform: translateY(-50); /* posição original */
+    transform: translateY(100px); /* posição original */
   }
   50% {
-    transform: translateY(15px); /* sobe 15 pxs */
+    transform: translateY(50px); /* sobe 15 pxs */
   }
   100% {
-    transform: translateY(50); /* volta para a posição original */
+    transform: translateY(100px); /* volta para a posição original */
   }
 }
 
