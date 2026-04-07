@@ -1,12 +1,14 @@
+
+
 h1 {
-  color: #333;
-  font-size: 2.5em;
+  color: #000000;
+  font-size: 30px;
   margin-bottom: 10px;
   font-family: Verdana;
 }
 
 .container {
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 10px;
   background-color: #EFBF04;
@@ -14,3 +16,40 @@ h1 {
   box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.1);
 }
 
+.card { 
+  background-color: #fdefb4;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center
+}
+
+.descricao {
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+  font-family: Verdana;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #EFBF04;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.habilidades {
+  margin-top: 10px;
+  font-size: 18px;
+}
