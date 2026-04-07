@@ -1,10 +1,51 @@
-
+body {
+  background-color: #f0f0f0;
+  font-family: Verdana;
+}
 
 h1 {
   color: #000000;
-  font-size: 30px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: fantasy;
+  animation: trocarcor 3s ease-in-out infinite;
+  text-transform: uppercase; /* transforma o texto em maiúsculas */
+}
+
+@keyframes trocarcor { /* assim que se faz animação */
+  0% {
+    color: rgb(0, 0, 0); /* comeca preto */
+  }
+  50% {
+    color: #EFBF04; /* da um pico amarelo */
+  }
+  100% {
+    color: rgb(0, 0, 0); /* volta pro preto. era pra ser algo mágico... */
+  }
+}
+
+h2 {
+  color: #000000;
+  font-size: 25px;
   margin-bottom: 10px;
   font-family: Verdana;
+  text-transform: uppercase;
+}
+
+h2::after {
+  content: ":";
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(-50); /* posição original */
+  }
+  50% {
+    transform: translateY(15px); /* sobe 15 pxs */
+  }
+  100% {
+    transform: translateY(50); /* volta para a posição original */
+  }
 }
 
 .container {
@@ -12,8 +53,12 @@ h1 {
   margin: 0 auto;
   padding: 10px;
   background-color: #EFBF04;
-  border-radius: 10px;
+  border-radius: 10px; /* quantos mais px mais redonda a borda vai ficar */
   box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.1);
+  animation-name: flutuar; /* nome da animação */
+  animation-duration: 4s; /* duração da animacao */
+  animation-timing-function: ease-in-out; /* começa devagar, acelera no meio, termina devagar */
+  animation-iteration-count: infinite;  /* repete para sempre */
 }
 
 .card { 
@@ -21,6 +66,7 @@ h1 {
   border-radius: 10px;
   padding: 10px;
   text-align: center
+  
 }
 
 .descricao {
@@ -35,6 +81,9 @@ img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  border-color: #EFBF04;
+  border-width: 2px;
+  border-style: solid;
 }
 
 ul {
@@ -45,7 +94,7 @@ ul {
 ul li {
   background-color: #EFBF04;
   padding: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* espaço entre as margens das habilidades */
   border-radius: 5px;
 }
 
@@ -53,3 +102,15 @@ ul li {
   margin-top: 10px;
   font-size: 18px;
 }
+.caracteristicas {
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* ou 'center', 'flex-start', 'flex-end' */
+  background-color: #efc00479;
+  padding: 15px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
